@@ -23,7 +23,7 @@ jobs:
              cd ~
              git clone https://github.com/cliserkad/kdl
              cd kdl
-             mvn install
+             mvn clean install --file pom.xml --no-transfer-progress
              cd ~
       - name: mvn test
         run: mvn clean test --file pom.xml --no-transfer-progress
