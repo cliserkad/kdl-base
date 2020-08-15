@@ -23,4 +23,15 @@
             </plugin>
         </plugins>
     </build>
+    <repositories>
+        <repository>
+            <id>github</id>
+            <name>GitHub cliserkad Apache Maven Packages</name>
+            <layout>default</layout>
+            <url>https://maven.pkg.github.com/cliserkaed/kdl</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 </project>
