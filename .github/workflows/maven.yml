@@ -19,10 +19,11 @@ jobs:
         with:
           java-version: 1.8
       - name: install kdl
-        run: cd ~
-        run: git clone https://github.com/cliserkad/kdl
-        run: cd kdl
-        run: mvn install
-        run: cd ~
+        run: |
+             cd ~
+             git clone https://github.com/cliserkad/kdl
+             cd kdl
+             mvn install
+             cd ~
       - name: mvn test
         run: mvn clean test --file pom.xml --no-transfer-progress
