@@ -23,8 +23,8 @@
             </plugin>
         </plugins>
     </build>
-    <repositories>
-        <repository>
+    <pluginRepositories>
+        <pluginRepository>
             <id>github</id>
             <name>GitHub cliserkad Apache Maven Packages</name>
             <layout>default</layout>
@@ -32,6 +32,6 @@
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
-        </repository>
-    </repositories>
+        </pluginRepository>
+    </pluginRepositories>
 </project>
