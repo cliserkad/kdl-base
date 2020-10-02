@@ -18,12 +18,7 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 1.8
-      - name: install kdl
-        run: |
-             cd ~
-             git clone https://github.com/cliserkad/kdl
-             cd kdl
-             mvn clean install --file pom.xml --no-transfer-progress
-             cd ~
+      - name: install settings.xml
+        uses: s4u/maven-settings-action@v2.1.1
       - name: mvn test
         run: mvn clean test --file pom.xml --no-transfer-progress
