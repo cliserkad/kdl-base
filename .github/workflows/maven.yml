@@ -19,7 +19,7 @@ jobs:
         with:
           java-version: 1.8
       - name: install settings.xml
-        uses: s4u/maven-settings-action@v2.1.1
+        uses: s4u/maven-settings-action@v2.3.0
         with:
           servers: '[{"id": "github", "username": "${{github.actor}}", "password": "${{secrets.github_token}}"}]'
       - name: mvn test
